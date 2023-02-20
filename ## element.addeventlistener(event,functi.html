@@ -1,0 +1,31 @@
+## element.addeventlistener(event,function,usecapture/bubbling method)
+#####Document.getelementbyid(mybtn) and addeventlistener(click and display date)
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>addeventlistener without overwriting existing event handlers</title>
+  </head>
+  <body>
+    <button id="greetingsbtn">click to see current date</button>
+
+    <p>
+      This exmaple uses addeventlistener() method to attach a click event to a
+      button
+    </p>
+
+    <p id="example"></p>
+    <script>
+      document
+        .getElementById("greetingsbtn")
+        .addEventListener("click", displayDate);
+      function displayDate() {
+        doc.getElementById("example");
+        innerHTML = Date();
+      }
+    </script>
+  </body>
+</html>
