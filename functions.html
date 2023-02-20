@@ -1,0 +1,75 @@
+#functions in javascript
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript functions</title>
+  </head>
+  <body>
+    <h2>Calling functions without parameters in js</h2>
+    <p>example</p>
+    <button id="greetinsbtn" onclick="alert (displaySum());">
+      CLICK TO SEEE THE SUM OF TWO NUMBERS
+    </button>
+    <script>
+      function displaySum() {
+        var numb1 = 33;
+        var numb2 = 42;
+        var sum = numb1 + numb2;
+        alert(sum);
+      }
+      displaySum();
+    </script>
+  </body>
+</html>
+###functions with parameters
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javascript functions</title>
+  </head>
+  <body>
+    <h2>Javascript functions</h2>
+    <p>Functions with parameters(fistname,lastname,id).</p>
+    <p id="functionwithparameters"></p>
+    <script>
+      function personalDetails(fistname, lastname, id) {
+        document.write(
+          "Hello, " + fisrtname + " " + lastname + "of identity" + " " + id
+        );
+      }
+      personalDetails("Hildah", "Nkatha", 5822);
+    </script>
+  </body>
+</html>
+##Creating objects in javascript
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javascript</title>
+  </head>
+  <body>
+    <h2>javascript objects</h2>
+    <p>creating objects in javascript</p>
+    <p id="parag1"></p>
+    <script>
+      const personal = {
+        fisrtname: "makena",
+        lastname: "makenzi",
+        age: 32,
+        eyeColor: "black",
+      };
+
+      document.getElementById("parag1").innerHTML =
+        person.fisrtname + "is" + person.age + "years old.";
+    </script>
+  </body>
+</html>
